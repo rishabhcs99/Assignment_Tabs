@@ -24,9 +24,12 @@ public class MainActivity extends AppCompatActivity {
         ViewPagerAdapter adapter= new ViewPagerAdapter(getSupportFragmentManager());
 
 
-        adapter.AddFragment(new FragmentSpinner(),"Spinner");
-        adapter.AddFragment(new FragmentMovies(),"Movies");
-        adapter.AddFragment(new FragmentGallery(),"Gallery");
+        adapter.AddFragment(new FragmentSpinner(),"Insert");
+        //spinner
+        adapter.AddFragment(new FragmentMovies(),"Delete");
+        //movies
+        adapter.AddFragment(new FragmentGallery(),"View");
+        //gallery
 
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
